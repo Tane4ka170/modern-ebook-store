@@ -234,3 +234,81 @@ h2 {
   box-shadow: 0 28px 35px -10px rgba(110, 91, 211, 0.6);
   transform: scale(1.1);
 }
+
+.featured {
+  background: white;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.book-card {
+  background: var(--white);
+  border-radius: 32px;
+  padding: 1.8rem 1.2rem 1.8rem 1.2rem;
+  box-shadow: var(--shadow-sm);
+  transition: 0.25s;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+  display: flex;
+  flex-direction: column;
+}
+.book-card:hover {
+  transform: scale(1.05) translateY(-10px);
+  box-shadow: var(--shadow-hover);
+}
+
+.book-card img {
+  width: 140px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 22px;
+  margin: 0 auto 1.2rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.book-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  color: var(--navy);
+}
+
+.book-card .author {
+  color: #5a4f85;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.book-card .price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: linear-gradient(145deg, #2e2650, #8c7ae6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0.5rem 0;
+}
+
+.card-btn {
+  background: transparent;
+  border: 2px solid var(--soft-purple);
+  color: var(--navy);
+  font-weight: 600;
+  padding: 0.7rem 1.2rem;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: auto;
+  font-size: 1rem;
+}
+
+.card-btn:hover {
+  background: var(--soft-purple);
+  color: white;
+  border-color: var(--soft-purple);
+  transform: scale(1.1);
+}
