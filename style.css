@@ -322,3 +322,51 @@ h2 {
   grid-template-columns: repeat(4, 1fr);
   gap: 1.8rem;
 }
+
+.cat-item {
+  background: white;
+  border-radius: 42px;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.35rem;
+  color: var(--navy);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: 0.2s;
+  border: 1px solid white;
+  backdrop-filter: blur(10px);
+}
+
+.cat-item i {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(45deg, #2e2650, #8c7ae6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cat-item:hover {
+  background: var(--navy);
+  color: white;
+  transform: scale(1.1);
+  border-color: var(--soft-purple);
+}
+.cat-item:hover i {
+  -webkit-text-fill-color: white;
+  background: none;
+}
+
+.about {
+  background: white;
+}
+
+.about p {
+  font-size: 1.3rem;
+  max-width: 900px;
+  background: rgba(155, 135, 245, 0.05);
+  padding: 2rem;
+  border-radius: 48px;
+  border-left: 10px solid var(--soft-purple);
+  box-shadow: var(--shadow-sm);
+}
