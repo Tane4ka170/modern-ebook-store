@@ -364,9 +364,101 @@ h2 {
 .about p {
   font-size: 1.3rem;
   max-width: 900px;
-  background: rgba(155, 135, 245, 0.05);
+  background: rgba(46, 38, 80, 0.05);
   padding: 2rem;
   border-radius: 48px;
   border-left: 10px solid var(--soft-purple);
   box-shadow: var(--shadow-sm);
+}
+
+.testimonials {
+  background: linear-gradient(145deg, #f4f6ff, #ffffff);
+}
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 42px;
+  padding: 2rem 1.8rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: 1px solid white;
+}
+
+.testimonial-card i {
+  color: #c27903;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: #8c7ae6;
+}
+
+.testimonial-card h4 {
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.newsletter {
+  background: linear-gradient(125deg, #2e2650, #6f5bd3);
+  color: white;
+  text-align: center;
+}
+
+.newsletter .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter h2 {
+  color: white;
+  background: none;
+  -webkit-text-fill-color: white;
+}
+
+.newsletter form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 600px;
+  width: 100%;
+}
+
+.newsletter input {
+  flex: 2 1 250px;
+  padding: 1.2rem 2rem;
+  border: none;
+  border-radius: 60px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(10px);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.newsletter input::placeholder {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.newsletter .btn {
+  flex: 0 1 auto;
+  background: white;
+  color: var(--navy);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: none;
+  padding: 1.2rem 1.8rem;
+}
+
+.newsletter .btn:hover {
+  background: var(--soft-purple);
+  color: white;
 }
