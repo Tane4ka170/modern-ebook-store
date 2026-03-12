@@ -463,7 +463,7 @@ h2 {
   color: white;
 }
 
-.footer {
+footer {
   background: #2e2650;
   color: #dcd8ff;
 }
@@ -492,4 +492,44 @@ h2 {
 }
 
 .footer-links a {
+  color: #dcd8ff;
+  text-decoration: none;
+  margin: 0 1 rem;
+  font-weight: 400;
+}
+
+.footer-links a:hover {
+  color: var(--soft-purple);
+  border-bottom: 2px solid var(--soft-purple);
+}
+
+.copyright {
+  text-align: center;
+  padding: 1.8rem;
+  font-size: 0.98rem;
+}
+
+@media (max-width: 992px) {
+  .hero .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cat-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .cat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
 }
